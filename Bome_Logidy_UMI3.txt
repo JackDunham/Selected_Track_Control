@@ -1,0 +1,52 @@
+Project: Bome Logidy UMI3
+ Project MIDI IN ports:   Logidy UMI3
+ Project MIDI OUT ports:  Bome MIDI Translator 1 Virtual Out
+_____________________________________________________________
+[x] Preset 0: New Preset
+
+[x] Translator 0.0: note ON toggle
+Options: swallow
+Incoming: MIDI 90 3E 7f
+Rules:
+  ga=ga+1
+  if ga>=2 then ga=0
+  gb=62
+  if ga==0 then gb=63
+Outgoing: MIDI 90 gb 7f
+
+[x] Translator 0.1: note OFF toggle
+Options: swallow
+Incoming: MIDI 90 3E 00
+Rules:
+  gb=62
+  if ga==0 then gb=63
+Outgoing: MIDI 90 gb 00
+
+[x] Translator 0.2: left switch ON
+Incoming: MIDI 90 3c 7f
+Rules:
+  gc=60
+  if ga==1 then gc=61
+Outgoing: MIDI 90 gc 7f
+
+[x] Translator 0.3: left switch OFF
+Incoming: MIDI 90 3c 00
+Rules:
+  gc=60
+  if ga==1 then gc=61
+Outgoing: MIDI 90 gc 00
+
+[x] Translator 0.4: right switch ON
+Incoming: MIDI 90 40 7f
+Rules:
+  gd=64
+  if ga==1 then gd=65
+Outgoing: MIDI 90 gd 7f
+
+[x] Translator 0.5: right switch ON
+Incoming: MIDI 90 40 00
+Rules:
+  gd=64
+  if ga==1 then gd=65
+Outgoing: MIDI 90 gd 00
+
