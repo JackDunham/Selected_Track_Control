@@ -7,8 +7,8 @@ Name=New Preset
 Active=1
 PresetSwitchIgnore=0
 Name0=note ON toggle
-Incoming0=MID1903E7f
-Outgoing0=MID190gb7f
+Incoming0=MID2MIDA0001000BLogidy UMI3903E7f
+Outgoing0=MID2MIDA00010022Bome MIDI Translator 1 Virtual Out90gb7f
 Options0=Actv01Stop00OutO00StMa00000004ga=ga+1if(ga>=2)ga=0gb=62if(ga==0)gb=63
 Name1=note OFF toggle
 Incoming1=MID1903E00
@@ -43,5 +43,5 @@ DefaultOutPorts=MIDA00010022Bome MIDI Translator 1 Virtual Out
 
 [Signatures]
 SigName-1=[Midi Translator Pro Internal]
-Signature-1=xZHdbGRmJ9xCm2vK7J9P5vvvPtF8+CwLAQpi9q3c9MAv5u9jGwYlvScj4dyLSFsyKS04cnnIEbNqwN7OE1ZwhTegOm1ywL6RZW9LBWYeyJVpo01Fw98iBTlvDe57+7avxCKpTyDzECVaudnjDsacq+gBQ++YxeKeQiMp3YSLYA0=
+Signature-1=bcNTKC6w4XeTSUZ9jWbRezWUsarXdHElqKrNclgBy/7iowj7bWrPGbv82fJCMWikCs61AsyNUsoBUqqU9+Jnu0ea/Eka0w/nvvauogGlu5S1KkkqEhE3a5s+f6YHxdy2eSOqJc45xGcK2GKAk7GfO55GXyeYWUTRq9bewPgWms8=
 SignedBy-1=Jack Dunham
